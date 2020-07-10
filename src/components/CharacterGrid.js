@@ -3,7 +3,7 @@ import Character from './Character';
 
 const CharacterGrid = ({items, isLoading }) => {
     return isLoading ? <h1>Loading...</h1> : <section className="cards">
-        {items.map(item => (< Character key={item.char_id} name={item.name} />))}
+        {items.map(item => (< Character key={item.char_id} item={item} />))}
     </section>
 }
 
