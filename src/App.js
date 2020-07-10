@@ -21,12 +21,12 @@ const App = () => {
       }
 
       fetchItems();
-  }, [])
+  }, [query])
 
   return(
     <div className='container'>
       <Header />
-      <Search />
+      <Search getQuery={(q) => setQuery(q)}/>
       <CharacterGrid isLoading={isLoading} items={items}/>      
     </div>
   );
