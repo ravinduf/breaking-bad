@@ -4,6 +4,7 @@ import './App.css';
 
 import Header from './components/Header';
 import Character from './components/Character';
+import CharacterGrid from './components/CharacterGrid';
 
 const App = () => {
   const [items, setItems] = useState([]);
@@ -24,9 +25,7 @@ const App = () => {
   return(
     <div className='container'>
       <Header />
-      {items.map(item => (
-        <Character key={item.id} name={item.name} />
-      ))}
+      <CharacterGrid isLoading={isLoading} items={items}/>      
     </div>
   );
 }
