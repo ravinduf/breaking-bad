@@ -3,7 +3,6 @@ import axios from 'axios';
 import './App.css';
 
 import Header from './components/Header';
-import Character from './components/Character';
 import CharacterGrid from './components/CharacterGrid';
 
 const App = () => {
